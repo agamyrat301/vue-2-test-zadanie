@@ -1,0 +1,29 @@
+@mixin d-flex {
+    display: flex;
+}
+
+@mixin justify-between {
+    justify-content: space-between;
+}
+
+@mixin justify-center {
+    justify-content: center;
+}
+
+@mixin items-center {
+    align-items: center;
+}
+
+@mixin bg-primary {
+    background-color: #44A248;
+}
+
+@mixin flex-center {
+  @include d-flex;
+  @include justify-center;
+  @include items-center;
+}
+
+@mixin box-shadow($color, $blur) {
+  box-shadow: 0 4px $blur $color;
+}
